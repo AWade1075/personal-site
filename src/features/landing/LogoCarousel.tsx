@@ -1,6 +1,6 @@
 "use client";
 import { Section } from "@/components";
-import { motion } from "motion/react";
+import styles from "./LogoCarousel.module.css";
 interface Logo {
   name: string;
   icon: string;
@@ -22,30 +22,23 @@ const logos: Logo[] = [
 export const LogoCarousel = () => {
   return (
     <Section header="Technologies" className="overflow-x-hidden">
-      <motion.div
-        className="carousel-track flex gap-8"
-        animate={{ x: "-100%" }}
-        transition={{
-          duration: 30,
-          repeat: Infinity,
-          ease: "linear",
-          repeatType: "loop",
-        }}
-      >
-        {[...logos, ...logos, ...logos].map((logo, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center justify-center shrink-0 w-12 h-12 mr-4"
-          >
-            <img
-              src={`/${logo.icon}`}
-              alt={logo.name}
-              title={logo.name}
-              className="w-24 h-24"
-            />
-          </div>
-        ))}
-      </motion.div>
+      <div className={styles.carouselContainer}>
+        <div className={`${styles.carouselTrack} flex gap-8`}>
+          {[...logos, ...logos].map((logo, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center shrink-0 w-12 h-12 mr-4"
+            >
+              <img
+                src={`/${logo.icon}`}
+                alt={logo.name}
+                title={logo.name}
+                className="w-24 h-24"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </Section>
   );
 };
