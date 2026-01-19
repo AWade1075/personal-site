@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
 interface HeaderProps {
   name: string;
@@ -28,39 +28,48 @@ export const Header = ({ name, title, email, linkedin }: HeaderProps) => {
   return (
     <header className="mb-8 border-b border-col-primary pb-8">
       <div className="flex justify-between items-center">
-        <h1 className="text-4xl font-bold text-text-primary mb-2">{name}</h1>
+        <div className="flex grow ">
+          <img
+            src="/header-icon.png"
+            alt="Adam Wade"
+            className="w-24 h-24 rounded-full bg-background-secondary mr-2 border border-col-primary"
+          ></img>
+          <div>
+            <h1 className="text-4xl font-bold text-text-primary mb-2">
+              {name}
+            </h1>
+            <p className="text-xl text-text-primary mb-2">{title}</p>
+            <div className="flex gap-4 text-sm text-text-primary">
+              <a
+                href={`mailto:${email}`}
+                className="hover:text-col-primary underline font-bold"
+              >
+                {email}
+              </a>
+
+              <a
+                href={linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-col-primary underline font-bold"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
         <div>
           <button
             onClick={onToggleTheme}
-            className="mt-4 px-4 py-2 bg-gray-200 rounded"
+            className="mt-4 px-4 py-2 bg-background-secondary border border-col-primary rounded"
           >
             {isDarkTheme ? (
-              <MoonIcon className="h-5 w-5 inline" />
+              <MoonIcon className="h-5 w-5 inline text-col-primary" />
             ) : (
-              <SunIcon className="h-5 w-5 inline" />
+              <SunIcon className="h-5 w-5 inline  text-col-primary" />
             )}
           </button>
         </div>
-      </div>
-      <p className="text-xl text-text-primary mb-4">{title}</p>
-      <div className="flex gap-4 text-sm text-text-primary">
-        <a
-          href={`mailto:${email}`}
-          className="hover:text-col-primary underline font-bold"
-        >
-          {email}
-        </a>
-
-        {linkedin && (
-          <a
-            href={linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-col-primary underline font-bold"
-          >
-            LinkedIn
-          </a>
-        )}
       </div>
     </header>
   );
