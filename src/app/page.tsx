@@ -1,3 +1,4 @@
+import { ScrollViewer } from "@/components/ScrollViewer";
 import {
   Header,
   About,
@@ -89,10 +90,18 @@ const Page = () => {
       <IntroOverlay />
       <div className="max-w-3xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <Header {...personalInfo} />
-        <About bio={bio} />
-        <LogoCarousel />
-        <Experience jobs={experience} />
-        <Skills skills={skills} />
+        <ScrollViewer>
+          <About bio={bio} />
+        </ScrollViewer>
+        <ScrollViewer>
+          <LogoCarousel />
+        </ScrollViewer>
+        <ScrollViewer>
+          <Experience jobs={experience} />
+        </ScrollViewer>
+        <ScrollViewer>
+          <Skills skills={skills} />
+        </ScrollViewer>
       </div>
     </>
   );
