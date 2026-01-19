@@ -34,7 +34,7 @@ export const Header = ({ name, title, email, linkedin }: HeaderProps) => {
           <img
             src="/header-icon.png"
             alt="Adam Wade"
-            className="w-24 h-24 rounded-full bg-background-secondary mr-2 border border-col-primary"
+            className="w-24 h-24 rounded-full bg-background-secondary mr-4 border border-col-primary"
           ></img>
           <div>
             <h1 className="text-4xl font-bold text-text-primary mb-2">
