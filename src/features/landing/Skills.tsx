@@ -6,8 +6,7 @@ interface SkillsProps {
 
 export const Skills = ({ skills }: SkillsProps) => {
   return (
-    <Section>
-      <h2 className="text-2xl font-bold text-text-primary mb-4">Skills</h2>
+    <Section header={"Skills"}>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill, index) => (
           <span

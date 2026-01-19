@@ -15,8 +15,7 @@ interface ExperienceProps {
 
 export const Experience = ({ jobs }: ExperienceProps) => {
   return (
-    <Section>
-      <h2 className="text-2xl font-bold text-text-primary mb-6">Experience</h2>
+    <Section header="Experience">
       <div className="space-y-6">
         {jobs.map((job, index) => (
           <div key={index} className="border-l-4 border-col-primary pl-4">
