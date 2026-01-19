@@ -6,42 +6,46 @@ interface Logo {
 }
 
 const logos: Logo[] = [
-  { name: "React", icon: "⚛️" },
-  { name: "TypeScript", icon: "🔷" },
-  { name: "Node.js", icon: "🟢" },
-  { name: "Next.js", icon: "▲" },
-  { name: "JavaScript", icon: "⚡" },
-  { name: "HTML", icon: "🏗️" },
-  { name: "CSS", icon: "🎨" },
-  { name: "PostgreSQL", icon: "🐘" },
-  { name: "MongoDB", icon: "🍃" },
-  { name: "Docker", icon: "🐳" },
-  { name: "Git", icon: "📦" },
-  { name: "Tailwind", icon: "🌊" },
+  { name: "React", icon: "icons8-react.svg" },
+  { name: "TypeScript", icon: "icons8-typescript.svg" },
+  { name: "Node.js", icon: "icons8-nodejs.svg" },
+  { name: "Next.js", icon: "next.svg" },
+  { name: "HTML", icon: "icons8-html-5.svg" },
+  { name: "CSS", icon: "icons8-css.svg" },
+  { name: "PostgreSQL", icon: "icons8-postgres.svg" },
+  { name: "Docker", icon: "icons8-docker.svg" },
+  { name: "Tailwind", icon: "icons8-tailwind-css.svg" },
+  { name: "Python", icon: "icons8-python-48.png" },
 ];
 
 export const LogoCarousel = () => {
   return (
-    <section className="mb-8">
-      <h2 className="text-2xl font-bold text-text-primary mb-6">
-        Technologies
-      </h2>
-
+    <section className="mb-8 bg-background-secondary">
       <div className="relative w-full overflow-hidden rounded-lg border border-col-primary p-6">
+        <h2 className="text-2xl font-bold text-text-primary mb-6">
+          Technologies
+        </h2>
         <motion.div
-          className="carousel-track flex gap-8 "
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+          className="carousel-track flex gap-8"
+          animate={{ x: "-100%" }}
+          transition={{
+            duration: 30,
+            repeat: Infinity,
+            ease: "linear",
+            repeatType: "loop",
+          }}
         >
-          {[...logos, ...logos].map((logo, index) => (
+          {[...logos, ...logos, ...logos].map((logo, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center shrink-0 w-24 h-24 rounded-lg bg-white/50 backdrop-blur-sm border transition-all duration-300"
+              className="flex flex-col items-center justify-center shrink-0 w-12 h-12 mr-4"
             >
-              <div className="text-4xl mb-2">{logo.icon}</div>
-              <p className="text-xs font-medium text-text-secondary text-center whitespace-nowrap">
-                {logo.name}
-              </p>
+              <img
+                src={`/${logo.icon}`}
+                alt={logo.name}
+                title={logo.name}
+                className="w-24 h-24"
+              />
             </div>
           ))}
         </motion.div>
