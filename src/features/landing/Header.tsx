@@ -29,7 +29,7 @@ export const Header = ({ name, title, email, linkedin }: HeaderProps) => {
 
   return (
     <header className="mb-8 border-b border-col-primary pb-8">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center  flex-col sm:flex-row sm:gap-4 gap-2">
         <div className="flex grow ">
           <img
             src="/header-icon.png"
@@ -41,10 +41,10 @@ export const Header = ({ name, title, email, linkedin }: HeaderProps) => {
               <AnimatedFont delay={2} text={name} />
             </h1>
             <p className="text-xl text-text-primary mb-2">{title}</p>
-            <div className="flex gap-4 text-sm text-text-primary">
+            <div className="flex flex-col sm:flex-row sm:gap-4 gap-2 text-sm text-text-primary">
               <Link
                 href={`mailto:${email}`}
-                className="hover:text-col-primary underline font-bold"
+                className="hover:text-col-primary underline font-bold whitespace-nowrap"
               >
                 <EnvelopeIcon className="w-4 h-4 inline mr-1" />
                 {email}
