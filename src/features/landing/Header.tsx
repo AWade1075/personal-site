@@ -41,7 +41,7 @@ export const Header = ({ name, title, email, linkedin }: HeaderProps) => {
               <AnimatedFont delay={2} text={name} />
             </h1>
             <p className="text-xl text-text-primary mb-2">{title}</p>
-            <div className="flex flex-col sm:flex-row sm:gap-4 gap-2 text-sm text-text-primary">
+            <div className="flex flex-col gap-2 text-sm text-text-primary">
               <Link
                 href={`mailto:${email}`}
                 className="hover:text-col-primary underline font-bold whitespace-nowrap"
@@ -61,6 +61,18 @@ export const Header = ({ name, title, email, linkedin }: HeaderProps) => {
                   className="w-4 h-4 inline mr-1"
                 />
                 LinkedIn
+              </Link>
+
+              <Link
+                href={
+                  "https://www.credly.com/badges/b975fac2-5ee8-4ccb-8ffb-6bd3e9c65710/linked_in?t=t277mh"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-col-primary underline font-bold"
+              >
+                <img src="/icons8-aws.svg" className="w-4 h-4 inline mr-1" />
+                AWS Certified Developer-Associate
               </Link>
             </div>
           </div>

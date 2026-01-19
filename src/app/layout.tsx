@@ -2,7 +2,12 @@ import "./app.css";
 
 const RootLayout = ({ children }: { children: React.ReactNode }): any => {
   return (
-    <html lang="en" id="root" suppressHydrationWarning>
+    <html
+      lang="en"
+      id="root"
+      suppressHydrationWarning
+      title="Adam Wade - Full Stack Developer"
+    >
       <head>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

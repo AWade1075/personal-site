@@ -7,6 +7,7 @@ import {
   IntroOverlay,
   LogoCarousel,
 } from "@/features/landing";
+import { Education } from "@/features/landing/Education";
 
 const Page = () => {
   const personalInfo = {
@@ -15,6 +16,7 @@ const Page = () => {
     email: "adamwade1075@gmail.com",
     github: "https://github.com/adamwade1075",
     linkedin: "https://www.linkedin.com/in/adam-wade-6903691b1",
+    AWS: "https://www.linkedin.com/in/adam-wade-6903691b1",
   };
 
   const bio =
@@ -83,6 +85,12 @@ const Page = () => {
     "Tailwind CSS",
     "Git",
     "Docker",
+    "AWS",
+    "Python",
+    "Jest",
+    "Vitest",
+    "CSS",
+    "HTML",
   ];
 
   return (
@@ -98,6 +106,9 @@ const Page = () => {
         </ScrollViewer>
         <ScrollViewer>
           <Experience jobs={experience} />
+        </ScrollViewer>
+        <ScrollViewer>
+          <Education />
         </ScrollViewer>
         <ScrollViewer>
           <Skills skills={skills} />
