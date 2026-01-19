@@ -11,6 +11,7 @@ const logos: Logo[] = [
   { name: "TypeScript", icon: "icons8-typescript.svg" },
   { name: "Node.js", icon: "icons8-nodejs.svg" },
   { name: "Next.js", icon: "next.svg" },
+  { name: "AWS", icon: "icons8-aws.svg" },
   { name: "HTML", icon: "icons8-html-5.svg" },
   { name: "CSS", icon: "icons8-css.svg" },
   { name: "PostgreSQL", icon: "icons8-postgres.svg" },
