@@ -1,4 +1,10 @@
-import { Header, About, Experience, Skills } from "@/features/landing";
+import {
+  Header,
+  About,
+  Experience,
+  Skills,
+  IntroOverlay,
+} from "@/features/landing";
 
 const Page = () => {
   const personalInfo = {
@@ -53,12 +59,15 @@ const Page = () => {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-      <Header {...personalInfo} />
-      <About bio={bio} />
-      <Experience jobs={experience} />
-      <Skills skills={skills} />
-    </div>
+    <>
+      <IntroOverlay />
+      <div className="max-w-3xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <Header {...personalInfo} />
+        <About bio={bio} />
+        <Experience jobs={experience} />
+        <Skills skills={skills} />
+      </div>
+    </>
   );
 };
 
