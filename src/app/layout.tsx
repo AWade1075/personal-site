@@ -6,9 +6,12 @@ const RootLayout = ({
   children: React.ReactNode;
 }): React.ReactElement => {
   return (
-    <html lang="en">
+    <html lang="en" id="root" className="dark">
+      <head>
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+      </head>
       <body>
-        <main>{children}</main>
+        <main className="bg-background min-h-screen">{children}</main>
       </body>
     </html>
   );

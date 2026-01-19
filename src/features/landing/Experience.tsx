@@ -14,12 +14,14 @@ interface ExperienceProps {
 export const Experience = ({ jobs }: ExperienceProps) => {
   return (
     <section className="mb-8">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">Experience</h2>
+      <h2 className="text-2xl font-bold text-text-primary mb-6">Experience</h2>
       <div className="space-y-6">
         {jobs.map((job, index) => (
           <div key={index} className="border-l-4 border-blue-600 pl-4">
-            <h3 className="text-xl font-semibold text-gray-900">{job.title}</h3>
-            <p className="text-gray-600">{job.company}</p>
+            <h3 className="text-xl font-semibold text-text-primary">
+              {job.title}
+            </h3>
+            <p className="text-text-primary">{job.company}</p>
             <p className="text-sm text-gray-500 mb-2">
               {job.startDate} – {job.endDate}
             </p>
