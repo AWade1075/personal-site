@@ -1,4 +1,5 @@
 "use client";
+import { Section } from "@/components";
 import { motion } from "motion/react";
 interface Logo {
   name: string;
@@ -20,36 +21,31 @@ const logos: Logo[] = [
 
 export const LogoCarousel = () => {
   return (
-    <section className="mb-8 bg-background-secondary">
-      <div className="relative w-full overflow-hidden rounded-lg border border-col-primary p-6">
-        <h2 className="text-2xl font-bold text-text-primary mb-6">
-          Technologies
-        </h2>
-        <motion.div
-          className="carousel-track flex gap-8"
-          animate={{ x: "-100%" }}
-          transition={{
-            duration: 30,
-            repeat: Infinity,
-            ease: "linear",
-            repeatType: "loop",
-          }}
-        >
-          {[...logos, ...logos, ...logos].map((logo, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center shrink-0 w-12 h-12 mr-4"
-            >
-              <img
-                src={`/${logo.icon}`}
-                alt={logo.name}
-                title={logo.name}
-                className="w-24 h-24"
-              />
-            </div>
-          ))}
-        </motion.div>
-      </div>
-    </section>
+    <Section header="Technologies" className="overflow-x-hidden">
+      <motion.div
+        className="carousel-track flex gap-8"
+        animate={{ x: "-100%" }}
+        transition={{
+          duration: 30,
+          repeat: Infinity,
+          ease: "linear",
+          repeatType: "loop",
+        }}
+      >
+        {[...logos, ...logos, ...logos].map((logo, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center shrink-0 w-12 h-12 mr-4"
+          >
+            <img
+              src={`/${logo.icon}`}
+              alt={logo.name}
+              title={logo.name}
+              className="w-24 h-24"
+            />
+          </div>
+        ))}
+      </motion.div>
+    </Section>
   );
 };

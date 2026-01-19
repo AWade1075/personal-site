@@ -2,6 +2,7 @@
 
 import React from "react";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
+import { Link } from "@/components";
 
 interface HeaderProps {
   name: string;
@@ -40,21 +41,21 @@ export const Header = ({ name, title, email, linkedin }: HeaderProps) => {
             </h1>
             <p className="text-xl text-text-primary mb-2">{title}</p>
             <div className="flex gap-4 text-sm text-text-primary">
-              <a
+              <Link
                 href={`mailto:${email}`}
                 className="hover:text-col-primary underline font-bold"
               >
                 {email}
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-col-primary underline font-bold"
               >
                 LinkedIn
-              </a>
+              </Link>
             </div>
           </div>
         </div>
