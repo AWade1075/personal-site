@@ -26,7 +26,7 @@ export const Header = ({ name, title, email, linkedin }: HeaderProps) => {
   };
 
   return (
-    <header className="mb-8 border-b border-gray-200 pb-8">
+    <header className="mb-8 border-b border-col-primary pb-8">
       <div className="flex justify-between items-center">
         <h1 className="text-4xl font-bold text-text-primary mb-2">{name}</h1>
         <div>

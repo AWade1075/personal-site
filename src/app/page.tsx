@@ -4,6 +4,7 @@ import {
   Experience,
   Skills,
   IntroOverlay,
+  LogoCarousel,
 } from "@/features/landing";
 
 const Page = () => {
@@ -64,6 +65,7 @@ const Page = () => {
       <div className="max-w-3xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <Header {...personalInfo} />
         <About bio={bio} />
+        <LogoCarousel />
         <Experience jobs={experience} />
         <Skills skills={skills} />
       </div>

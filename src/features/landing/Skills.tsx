@@ -1,10 +1,12 @@
+import { Section } from "@/components/Section";
+
 interface SkillsProps {
   skills: string[];
 }
 
 export const Skills = ({ skills }: SkillsProps) => {
   return (
-    <section className="mb-8">
+    <Section>
       <h2 className="text-2xl font-bold text-text-primary mb-4">Skills</h2>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill, index) => (
@@ -16,6 +18,6 @@ export const Skills = ({ skills }: SkillsProps) => {
           </span>
         ))}
       </div>
-    </section>
+    </Section>
   );
 };

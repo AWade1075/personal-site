@@ -1,3 +1,5 @@
+import { Section } from "@/components/Section";
+
 interface Job {
   title: string;
   company: string;
@@ -13,7 +15,7 @@ interface ExperienceProps {
 
 export const Experience = ({ jobs }: ExperienceProps) => {
   return (
-    <section className="mb-8">
+    <Section>
       <h2 className="text-2xl font-bold text-text-primary mb-6">Experience</h2>
       <div className="space-y-6">
         {jobs.map((job, index) => (
@@ -36,6 +38,6 @@ export const Experience = ({ jobs }: ExperienceProps) => {
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
