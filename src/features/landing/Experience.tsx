@@ -21,13 +21,13 @@ export const Experience = ({ jobs }: ExperienceProps) => {
             <h3 className="text-xl font-semibold text-text-primary">
               {job.title}
             </h3>
-            <p className="text-text-primary">{job.company}</p>
-            <p className="text-sm text-gray-500 mb-2">
+            <p className="text-text-secondary">{job.company}</p>
+            <p className="text-sm  text-text-secondary mb-2">
               {job.startDate} – {job.endDate}
             </p>
-            <p className="text-gray-700 mb-2">{job.description}</p>
+            <p className="text-text-secondary">{job.description}</p>
             {job.highlights && job.highlights.length > 0 && (
-              <ul className="list-disc list-inside text-gray-700 text-sm">
+              <ul className="list-disc list-inside text-text-secondary text-sm">
                 {job.highlights.map((highlight, i) => (
                   <li key={i}>{highlight}</li>
                 ))}
