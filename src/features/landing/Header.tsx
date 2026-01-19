@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
+import { MoonIcon, SunIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { Link } from "@/components";
 
 interface HeaderProps {
@@ -45,6 +45,7 @@ export const Header = ({ name, title, email, linkedin }: HeaderProps) => {
                 href={`mailto:${email}`}
                 className="hover:text-col-primary underline font-bold"
               >
+                <EnvelopeIcon className="w-4 h-4 inline mr-1" />
                 {email}
               </Link>
 
@@ -54,6 +55,10 @@ export const Header = ({ name, title, email, linkedin }: HeaderProps) => {
                 rel="noopener noreferrer"
                 className="hover:text-col-primary underline font-bold"
               >
+                <img
+                  src="/icons8-linkedin.svg"
+                  className="w-4 h-4 inline mr-1"
+                />
                 LinkedIn
               </Link>
             </div>
