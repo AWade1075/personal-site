@@ -5,6 +5,7 @@
 @theme {
   --font-sans: InterVariable, sans-serif;
   --font-sans-font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  --font-script: "Dancing Script", cursive;
 
   --color-col-primary: var(--color-yellow-600);
   --color-col-primary-dark: var(--color-yellow-800);

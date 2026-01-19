@@ -3,6 +3,7 @@
 import React from "react";
 import { MoonIcon, SunIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { Link } from "@/components";
+import { AnimatedFont } from "@/components/AnimatedFont";
 
 interface HeaderProps {
   name: string;
@@ -37,7 +38,7 @@ export const Header = ({ name, title, email, linkedin }: HeaderProps) => {
           ></img>
           <div>
             <h1 className="text-4xl font-bold text-text-primary mb-2">
-              {name}
+              <AnimatedFont delay={2} text={name} />
             </h1>
             <p className="text-xl text-text-primary mb-2">{title}</p>
             <div className="flex gap-4 text-sm text-text-primary">
