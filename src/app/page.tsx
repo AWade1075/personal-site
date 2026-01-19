@@ -28,8 +28,8 @@ const Page = () => {
       description:
         "Led development of customer-facing features and mentored junior developers.",
       highlights: [
-        "Leading the UI development effort for several React projects. Responsible for setting code standards and guidelines including SonarQube integration, unit testing, and accessibility compliance",
-        "Developing multiple features using Express microservices and corresponding UI updates across multiple projects deployed to AWS cloud",
+        "Led the UI development effort for several React projects. Responsible for setting code standards and guidelines including SonarQube integration, unit testing, and accessibility compliance",
+        "Developed multiple features using Express microservices and corresponding UI updates across multiple projects deployed to AWS cloud",
         "Led UI development effort for technical proposal challenges using React",
       ],
     },
