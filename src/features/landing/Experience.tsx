@@ -20,7 +20,7 @@ export const Experience = ({ jobs }: ExperienceProps) => {
       <div className="space-y-6">
         {jobs.map((job, index) => (
           <ScrollViewer key={index}>
-            <div className="border-l-4 border-col-primary pl-4">
+            <div className="border-l-4 border-col-primary pl-4 mb-16">
               <h3 className="text-xl font-semibold text-text-primary">
                 {job.title}
               </h3>
