@@ -17,7 +17,7 @@ export const Experience = ({ jobs }: ExperienceProps) => {
       <h2 className="text-2xl font-bold text-text-primary mb-6">Experience</h2>
       <div className="space-y-6">
         {jobs.map((job, index) => (
-          <div key={index} className="border-l-4 border-blue-600 pl-4">
+          <div key={index} className="border-l-4 border-col-primary pl-4">
             <h3 className="text-xl font-semibold text-text-primary">
               {job.title}
             </h3>

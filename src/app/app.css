@@ -6,8 +6,8 @@
   --font-sans: InterVariable, sans-serif;
   --font-sans-font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 
-  --color-primary: var(--color-yellow-800);
-  --color-primary-dark: var(--color-yellow-600);
+  --color-col-primary: var(--color-yellow-600);
+  --color-col-primary-dark: var(--color-yellow-800);
   --color-background: var(--color-white);
   --color-text-primary: var(--color-gray-900);
   --color-text-secondary: var(--color-gray-700);

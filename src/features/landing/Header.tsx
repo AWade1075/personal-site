@@ -46,7 +46,7 @@ export const Header = ({ name, title, email, linkedin }: HeaderProps) => {
       <div className="flex gap-4 text-sm text-text-primary">
         <a
           href={`mailto:${email}`}
-          className="hover:text-primary underline font-bold"
+          className="hover:text-col-primary underline font-bold"
         >
           {email}
         </a>
@@ -56,7 +56,7 @@ export const Header = ({ name, title, email, linkedin }: HeaderProps) => {
             href={linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-primary underline font-bold"
+            className="hover:text-col-primary underline font-bold"
           >
             LinkedIn
           </a>
