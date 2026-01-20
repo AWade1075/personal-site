@@ -16,7 +16,6 @@ const Page = () => {
     email: "adamwade1075@gmail.com",
     github: "https://github.com/adamwade1075",
     linkedin: "https://www.linkedin.com/in/adam-wade-6903691b1",
-    AWS: "https://www.linkedin.com/in/adam-wade-6903691b1",
   };
 
   const bio =
@@ -65,13 +64,24 @@ const Page = () => {
     {
       title: "Software Engineer",
       company: "Northrop Grumman",
-      startDate: "Jan 2015",
+      startDate: "Aug 2015",
       endDate: "Jan 2018",
       description:
         "Built and maintained full stack web applications from concept to deployment.",
       highlights: [
         "Led frontend development of multiple, high-visibility projects utilizing Angular",
         "Led instructional sessions for fellow developers and customer POCs on Angular",
+      ],
+    },
+    {
+      title: "Software Intern",
+      company: "OG Systems",
+      startDate: "Jun 2015",
+      endDate: "Aug 2015",
+      description:
+        "Built and maintained full stack web applications from concept to deployment.",
+      highlights: [
+        "Developed full MEAN stack application to assist in the ingestion and management of FBO opportunities",
       ],
     },
   ];
