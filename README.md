@@ -24,3 +24,10 @@ Viewable at https://awade-dev.com/
 ```bash
 pnpm install
 ```
+
+### 2. Run locally 
+
+```bash
+pnpm dev
+```
+
