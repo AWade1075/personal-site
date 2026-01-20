@@ -1,4 +1,4 @@
-# Static Next.js Site — Tailwind CSS + Framer Motion
+# Personal static website
 
 Quick personal fully static website done with Next.js, styled with Tailwind CSS and animated using Framer Motion.  
 Deployed on Vercel, proxied through Cloudflare.
