@@ -1,13 +1,9 @@
+import { Metadata } from "next";
 import "./app.css";
 
 const RootLayout = ({ children }: { children: React.ReactNode }): any => {
   return (
-    <html
-      lang="en"
-      id="root"
-      suppressHydrationWarning
-      title="Adam Wade - Full Stack Developer"
-    >
+    <html lang="en" id="root" suppressHydrationWarning>
       <head>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,6 +28,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }): any => {
       </body>
     </html>
   );
+};
+
+export const metadata: Metadata = {
+  title: "Adam Wade - Full Stack Developer",
+  description: "Work experience and portfolio",
 };
 
 export default RootLayout;

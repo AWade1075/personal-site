@@ -18,7 +18,7 @@ export const AnimatedFont = ({
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: delay + index * 0.2 }}
+            transition={{ delay: delay + index * 0.1 }}
             key={index}
           >
             {char}
