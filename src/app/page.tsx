@@ -26,7 +26,7 @@ const Page = () => {
       title: "Senior Software Engineer",
       company: "The Cadmus Group",
       startDate: "Jan 2024",
-      endDate: "Present",
+      endDate: "Feb 2026",
       description:
         "Led development of customer-facing features and mentored junior developers.",
       highlights: [
